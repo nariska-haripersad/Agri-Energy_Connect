@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AgriEnergyConnect</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AgriEnergyConnect.styles.css" asp-append-version="true" />
+    <style>
+        .app-header {
+            width: 100%;
+            padding: 20px 10%;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .app-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .app-header nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+            .app-header nav a {
+                text-decoration: none;
+                color: #333;
+                font-size: 18px;
+                transition: color 0.3s;
+            }
+
+                .app-header nav a:hover {
+                    color: #007BFF;
+                }
+    </style>
+</head>
+<body>
+    <div class="app-header">
+
+        <div class="app-name">Agri-Energy Connect</div>
+        <nav>
+            @{
+                var isLoggedIn = Context.Session.GetString("IsLoggedIn") == "true";
+                var userRole = Context.Session.GetString("UserRole");
+
+                if (!isLoggedIn)
+                {
+                    <a href="/">Home</a>
+                    <a href="/Employee/Login">Employee Login</a>
+                    <a href="/Farmer/Login">Farmer Login</a>
+                }
+                else if (userRole == "Employee")
+                {
+                    <a href="/">Home</a>
+                    <a href="/Employee/Create">Add Farmer</a>
+                    <a href="/Employee/SearchFarmer">Search Farmer</a>
+                    <a href="/Employee/Logout">Logout</a>
+                }
+                else if (userRole == "Farmer")
+                {
+                    <a href="/">Home</a>
+                    <a href="/Farmer/AddProduct">Add Product</a>
+                    <a href="/Farmer/ViewProducts">View Products</a>
+                    <a href="/Farmer/Logout">Logout</a>
+                }
+            }
+        </nav>
+    </div>
+
+
+    <div class="container mt-5">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
