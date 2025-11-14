@@ -1,10 +1,31 @@
 # Agri-Energy Connect
 Agri-Energy Connect is an individual project I completed for one of my university modules. This is a web application created with ASP.NET Core Web App (Model-View-Controller) and the goal behind this project was to design a solution to help bridge the gap between South Africa's agricultural sector and green energy technology providers. Farmers and green energy experts can share and view agricultural and green energy products.
 
-## Build & Run
-#### Building the prototype:
+## Technology Stack
+- ASP.NET Core MVC (.NET 8.0)
+- Entity Framework Core
+- SQL Server/SQL Server Management Studio
+- C#
+- Bootstrap (UI)
+
+## Setup Instructions 
+#### 1. Requirements 
+- Visual Studio (2022 or later recommended)
+- .NET 8.0 SDK
+- SQL Server + SQL Server Management Studio (or any compatible SQL database tool)
+#### 2. Database Configuration (Optional)
+A fully configured database is already linked to the project. However, if you want to rebuild or reconfigure it:
+- Download the SQL script included in this repository
+- Open the script in SQL Server Management Studio (or any SQL tool that supports T-SQL)
+- Run the script to: <br>
+— Create the database <br>
+— Create the tables 
+— Insert sample data 
+
+
+#### Database Configuration (Optional)
 - Although the database is already set up and linked to the application, it can be built/re-configured (if needed) on a user's local device.
-- To configure the database again, one should download the SQL script file from the project folder and open it in SQL Server Management Studio. Run the database commands needed to create the database, create the tables and populate the tables with the necessary data. Then get the connection string of the re-configured database, open the Visual Studio solution file for the project and input the  new connection string in the appropriate files/places where a connection string is needed or used (these files that implement the connection string include the Program.cs file, the appsettings.json file, the AgriEnergyConnectDbContext file and the FarmerController file).
+- To configure the database again, download the SQL script file from this repo, open it in SQL Server Management Studio. Run the database commands needed to create the database, create the tables and populate the tables with the necessary data. Then get the connection string of the re-configured database, open the Visual Studio solution file for the project and input the  new connection string in the appropriate files/places where a connection string is needed or used (these files that implement the connection string include the Program.cs file, the appsettings.json file, the AgriEnergyConnectDbContext file and the FarmerController file).
 - If the user is not re-configuring the database on their device, they do not have to follow the previous step.
 - The user needs to ensure they have Visual Studio downloaded on their local device and have the Visual Studio project file for the application. 
 - Ensure that the project file in Visual Studio has the necessary packages installed to run the application. The packages needed include: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.SqlServer, Microsoft.EntityFrameworkCore.Tools, Newtonsoft.Json and System.Data.SqlClient.
