@@ -27,10 +27,10 @@ A fully configured database is already linked to the project. However, if you wa
 — Program.cs <br>
 — AgriEnergyConnectDbContext.cs <br>
 — FarmerController.cs <br>
-⚠️ If you don't plan to rebuild the database, you skip this entire skip.
+⚠️ If you don't plan to rebuild the database, you can skip this entire skip.
 #### 3. Running the Application
 - Open the solution in Visual Studio
-- Ensure the required NuGet packages are installed:
+- Ensure the required NuGet packages are installed: <br>
 — Microsoft.EntityFrameworkCore <br>
 — Microsoft.EntityFrameworkCore.SqlServer <br>
 — Microsoft.EntityFrameworkCore.Tools <br>
@@ -38,6 +38,11 @@ A fully configured database is already linked to the project. However, if you wa
 — System.Data.SqlClient <br>
 - Build the project
 - Run the application using your preferred web browser
+
+## How to Use the System
+#### Login Options
+Upon launcing the web app, the user is presented with: 
+
 
 
 
