@@ -45,6 +45,14 @@ Upon launcing the web app, the user is presented with:
 - Login as Employee
 - Login as Farmer<br>
 ###### Each role has its own interface and permissions
+#### Demo Login Credentials 
+Use the following preloaded credentials to access the system as an employee:
+- Employee #1 <br>
+— Username: EM61230 <br>
+— Password: SoleCrop@51015 <br>
+- Employee #2 <br>
+— Username: EM58911 <br>
+— Password: WilliamSali367! <br>
 #### Employee Role 
 - Register new farmers
 - View all farmers and their products
