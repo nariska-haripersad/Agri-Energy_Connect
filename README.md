@@ -44,7 +44,7 @@ A fully configured database is already linked to the project. However, if you wa
 Upon launcing the web app, the user is presented with: 
 - Login as Employee
 - Login as Farmer<br>
-Each role has its own interface and permissions
+###### Each role has its own interface and permissions
 #### Employee Role 
 - Register new farmers
 - View all farmers and their products
