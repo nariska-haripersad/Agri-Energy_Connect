@@ -43,8 +43,7 @@ A fully configured database is already linked to the project. However, if you wa
 #### Login Options
 Upon launcing the web app, the user is presented with: 
 - Login as Employee
-- Login as Farmer
-<br>
+- Login as Farmer<br>
 Each role has its own interface and permissions
 #### Employee Role 
 - Register new farmers
@@ -52,8 +51,7 @@ Each role has its own interface and permissions
 - Filter products by category or production date
 #### Farmer Role 
 - Add products to their profile
-- View all products to they have added
-<br>
+- View all products to they have added<br>
 Both roles can log out and return to the main login page
   
 
