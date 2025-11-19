@@ -35,7 +35,7 @@ A fully configured database is already linked to the project. However, if you wa
 — Microsoft.EntityFrameworkCore.SqlServer <br>
 — Microsoft.EntityFrameworkCore.Tools <br>
 — Newtonsoft.Json <br>
-—  System.Data.SqlClient <br>
+— System.Data.SqlClient <br>
 - Build the project
 - Run the application using your preferred web browser
 
