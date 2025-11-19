@@ -52,7 +52,7 @@ Each role has its own interface and permissions
 #### Farmer Role 
 - Add products to their profile
 - View all products to they have added<br>
-Both roles can log out and return to the main login page
+###### Both roles can log out and return to the main login page
   
 
 
