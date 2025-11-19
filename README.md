@@ -51,7 +51,7 @@ Upon launcing the web app, the user is presented with:
 - Filter products by category or production date
 #### Farmer Role 
 - Add products to their profile
-- View all products to they have added<br>
+- View all products they have added<br>
 ###### Both roles can log out and return to the main login page
   
 
